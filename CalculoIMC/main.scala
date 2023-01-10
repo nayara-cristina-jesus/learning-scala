@@ -35,7 +35,7 @@ object Main {
   def main(args: Array[String]): Unit = {
     // Saida de dados
     println("\nCalculo do IMC")
-    println("\nIMC:" + Math.round(imc(70.0, 1.80)))
+    println("\nIMC:" + Math.round(imc(70.0, 1.80))) //parametros da funcao imc()
     println(classifica (60.0))
   }
 }
