@@ -11,11 +11,11 @@ de 35,0 a 40,0 - Obesidade grau II
 maior que 40,0 - Obesidade grau III */
 
 object Main {
-  // Calculando IMC
+  // Funcao que calcula IMC
   def imc(peso:Double, altura:Double): Double = {
     (peso/altura)/2
   }
-  //Classificando IMC
+  // Funcao que classifica IMC
   def classifica(resultado:Double): String = {
     if (resultado < 18.5) {
       return "\nMagreza";
