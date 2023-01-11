@@ -1,7 +1,7 @@
 /* Calculo do IMC
 
 ------------------------------------  
- IMC (kg/m²)  - Classificação
+IMC = peso/altura² - Classificação
 ------------------------------------  
 menor que 18,5 - Magreza
 de 18,5 a 24,9 - Peso normal
@@ -13,7 +13,7 @@ maior que 40,0 - Obesidade grau III */
 object Main {
   // Funcao que calcula IMC
   def imc(peso:Double, altura:Double): Double = {
-    (peso/altura)/2
+    (peso/(altura*altura))
   }
   // Funcao que classifica IMC
   def classifica(resultado:Double): String = {
